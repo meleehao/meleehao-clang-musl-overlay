@@ -16,6 +16,10 @@ DEPEND="
 RDEPEND="${DEPEND}
 	sys-apps/hwdata"
 
+PATCHES=(
+        "${FILESDIR}/lfs64.patch"
+)
+
 src_prepare() {
 	default
 }
